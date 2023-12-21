@@ -34,8 +34,6 @@ export default async function CountryPage({ params: { name } }: { params: {name:
   const country = await getCountryByName(decodeURI(name))
   const borderCountries = await getCountryBordersByName(decodeURI(name))
 
-  console.log(borderCountries)
-
   const formatter = Intl.NumberFormat("en", {notation: "compact"})
 
   return (
