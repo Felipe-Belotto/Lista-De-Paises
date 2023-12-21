@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Loading(){
   const arr = Array.from({length: 20})
   return(
-    <section className="grid grid-cols-5 w-full container gap-2 mt-16">
+    <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 w-full container gap-2 mt-16 px-10">
     {arr.map((_, index)=> (
       <article  key={index} 
       className='h-64 min-w-full p-2 bg-gray-100 border-2  rounded-xl hover:border-indigo-200 transition-all hover:shadow-xl flex flex-col gap-4 items-center'>
